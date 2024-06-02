@@ -1,0 +1,129 @@
+/* login.css */
+.container-login {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: white; /* Promijenite boju pozadine prema potrebi */
+  }
+  
+  .login-content {
+    background-color: pink; /* Promijenite boju pozadine prema potrebi */
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); /* Dodajte sjenu po potrebi */
+    padding: 40px;
+  }
+  
+  .login-content form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .login-content h2{
+	margin: 15px 0;
+	color:#0A2463;
+	font-size: 1.5rem;
+}
+
+.login-content .input-div{
+	position: relative;
+    display: grid;
+    grid-template-columns: 7% 93%;
+    margin: 25px 0;
+    padding: 5px 0;
+    border-bottom: 2px solid #e8c547;
+    ;
+}
+
+.login-content .input-div.one{
+	margin-top: 0;
+}
+
+.i{
+	color: #e8c547;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.i i{
+	transition: .3s;
+}
+
+.input-div > div{
+    position: relative;
+	height: 30px;
+}
+
+.input-div > div > h5{
+	position: absolute;
+	left: 10px;
+	top: 50%;
+	transform: translateY(-50%);
+	color: #0a25639f;
+	font-size: 18px;
+	transition: .3s;
+}
+
+.input-div:before, .input-div:after{
+	content: '';
+	position: absolute;
+	bottom: -2px;
+	width: 0%;
+	height: 2px;
+	background-color: #0A2463;
+	transition: .4s;
+}
+
+.input-div:before{
+	right: 50%;
+}
+
+.input-div:after{
+	left: 50%;
+}
+
+.input-div.focus:before, .input-div.focus:after{
+	width: 50%;
+}
+
+.input-div.focus > div > h5{
+	top: -5px;
+	font-size: 15px;
+}
+
+.input-div.focus > .i > i{
+	color: #0A2463;
+}
+
+.input-div > div > input{
+	position: absolute;
+	left: 0;
+	top: 0;
+	width: 100%;
+	height: 100%;
+	border: none;
+	outline: none;
+	background: none;
+	padding: 0.5rem 0.7rem;
+	font-size: 1.2rem;
+	color: #0A2463;
+}
+
+.input-div.pass{
+	margin-bottom: 10px;
+}
+
+  .input-div h5 {
+    margin: 0;
+  }
+  
+  .error-message {
+    color: #dc3545; /* Promijenite boju teksta greške prema potrebi */
+    margin-top: 10px;
+    text-align: center;
+  }
+  .forgotPass{
+    padding-top: 10px;
+  }
+  

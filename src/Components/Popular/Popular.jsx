@@ -4,8 +4,12 @@ import { BsArrowLeft } from "react-icons/bs";
 import { BsArrowRight } from "react-icons/bs";
 import { BsDot } from "react-icons/bs";
 
-import img from '../../assets/viber_image_2024-05-21_13-27-24-989.jpg';
-import img2 from '../../assets/viber_image_2024-05-21_13-27-14-795.jpg';
+import img from '../../assets/sarajevo-bascarsija.jpg';
+import img2 from '../../assets/146.jpg';
+import img3 from '../../assets/banjaluka.jpg';
+import img4 from '../../assets/japodski.jpg';
+import img5 from '../../assets/radimlja.jpg';
+import img6 from '../../assets/aladza.jpg';
 
 import Aos from 'aos'
 import 'aos/dist/aos.css'
@@ -13,45 +17,39 @@ import 'aos/dist/aos.css'
 const Data = [
 {
   id:1,
-  imgSrc:img2,
-  destTitle:'Machu Picchu',
-  location:'Peru',
-  grade:'CULTURAL RELAX',
+  imgSrc:img,
+  destTitle:'Baščaršija',
+  location:'Sarajevo',
 },
 {
   id:2,
   imgSrc:img2,
-  destTitle:'Machu Picchu',
-  location:'Peru',
-  grade:'CULTURAL RELAX',
+  destTitle:'Pliva Waterfall',
+  location:'Jajce',
 },
 {
   id:3,
-  imgSrc:img2,
-  destTitle:'Machu Picchu',
-  location:'Peru',
-  grade:'CULTURAL RELAX',
+  imgSrc:img3,
+  destTitle:'Cathedral of Christ the Savior',
+  location:'Banjaluka',
 },
 {
   id:4,
-  imgSrc:img2,
-  destTitle:'Machu Picchu',
-  location:'Peru',
-  grade:'CULTURAL RELAX',
+  imgSrc:img4,
+  destTitle:'Japod Islands',
+  location:'Bihać',
 },
 {
   id:5,
-  imgSrc:img2,
-  destTitle:'Machu Picchu',
-  location:'Peru',
-  grade:'CULTURAL RELAX',
+  imgSrc:img5,
+  destTitle:'Radimlja Necropolis',
+  location:'Stolac',
 },
 {
   id:6,
-  imgSrc:img2,
-  destTitle:'Machu Picchu',
-  location:'Peru',
-  grade:'CULTURAL RELAX',
+  imgSrc:img6,
+  destTitle:'Aladža Mosque',
+  location:'Foča',
 },
 ]
 const Popular = () => {
@@ -66,10 +64,10 @@ const Popular = () => {
   <div className="secHeader flex">
     <div data-aos ="fade-right " data-aos-duration ="2500 " className="textDiv">
       <h2 className="secTitle">
-        Popular Destionation
+        Currently Popular
       </h2>
         <p>
-          From historical cities to natural spectaculars...
+          From historical landmarks to natural wonders, this wonderful country is rich with various must-visit destinations.   
         </p>
     </div>
     <div data-aos ="fade-left " data-aos-duration ="2500 " className="iconsDiv flex">
@@ -103,7 +101,7 @@ const Popular = () => {
               </div>
               <div className="destText flex">
                 <h6>
-                  London
+                  {destTitle}
                 </h6>
               </div>
             </div>

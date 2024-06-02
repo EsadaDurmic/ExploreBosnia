@@ -25,7 +25,7 @@ const Navbar = () => {
         <div className="logoDiv">
           <a href="#" className="logo">
             <h1 className="flex">
-              <MdModeOfTravel id="logo-icon" className="icon" /> ExploreBosnia
+              <MdModeOfTravel id="logo-icon"className="icon" /> ExploreBosnia
             </h1>
           </a>
         </div>

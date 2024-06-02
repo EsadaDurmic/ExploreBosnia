@@ -15,8 +15,9 @@
 }
 
 .sectionabout .secContainer .mainContent .singleItem img {
-  background: brown;
-  width: 100px;
+  background:#E8C547;
+  width: 200px;
+  height:200px;
   border-radius: 50%;
   padding: 1rem;
 }

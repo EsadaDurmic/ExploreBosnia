@@ -3,7 +3,9 @@ import './offers.css';
 import { MdAirportShuttle, MdKingBed, MdBathtub, MdLocationOn } from 'react-icons/md';
 import { FaWifi } from 'react-icons/fa';
 import { BsArrowRightShort } from 'react-icons/bs';
-import image from '../../assets/viber_image_2024-05-21_13-27-23-859.jpg';
+import img from '../../assets/hotel1.jpg';
+import img2 from '../../assets/hotel2.jpg';
+import img3 from '../../assets/hotel3.jpg';
 
 import Aos from 'aos';
 import 'aos/dist/aos.css';
@@ -11,24 +13,24 @@ import 'aos/dist/aos.css';
 const offers = [
   {
     id: 1,
-    imgSrc: image,
-    destTitle: 'Sarajevo',
-    location: 'Sarajevo',
-    price: '150KM',
+    imgSrc: img,
+    destTitle: 'Hotel Baškuća',
+    location: 'Jekovac 2, Sarajevo',
+    price: '200KM',
   },
   {
     id: 2,
-    imgSrc: image,
-    destTitle: 'Sarajevo',
-    location: 'Sarajevo',
-    price: '150KM',
+    imgSrc: img2,
+    destTitle: 'Villa Floris',
+    location: 'Fra Ambre Miletića 50, Mostar',
+    price: '45KM',
   },
   {
     id: 3,
-    imgSrc: image,
-    destTitle: 'Sarajevo',
-    location: 'Sarajevo',
-    price: '150KM',
+    imgSrc: img3,
+    destTitle: 'Motel Almy',
+    location: 'Vranducka bb, Zenica',
+    price: '70KM',
   },
 ];
 
@@ -41,8 +43,8 @@ const Offers = () => {
     <section className='offer container section'>
       <div className="secContainer">
         <div data-aos="fade-up" data-aos-duration="2000" className="secIntro">
-          <h2 className="secTitle">Special Offer</h2>
-          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Hic, officia dignissimos. Doloremque possimus rerum exercitationem!</p>
+          <h2 className="secTitle">Special Offers</h2>
+          <p>Looking for last minute accomodation? Our partner site, Booking.com, has got you covered. Catch the discount before it's too late!</p>
         </div>
         <div className="mainContent grid">
           {offers.map(({ id, imgSrc, destTitle, location, price }) => (
@@ -76,7 +78,7 @@ const Offers = () => {
                 </div>
                 <div className="location flex">
                   <MdLocationOn className="icon" />
-                  <small>Lorem ipsum dolor sit amet. {location}</small>
+                  <small>{location}</small>
                 </div>
                 <button className="btn flex">
                   See details
