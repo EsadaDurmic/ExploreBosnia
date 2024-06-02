@@ -1,0 +1,26 @@
+@media screen and (min-width: 884px) {
+    .about .SetContainer .videoCard .cardContent {
+        gap: 4rem;
+        padding: 4rem 3rem;
+    }
+
+    .about .SetContainer .videoCard .cardContent .cardText h2 {
+        font-size: 2rem;
+    }
+
+    .about .SetContainer .videoCard .cardContent .cardText p {
+        opacity: 0.7;
+        font-size: 15px;
+    }
+
+    .about .SetContainer .videoCard .cardContent {
+        grid-template-columns: repeat(2, 1fr) !important;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .about .SetContainer .mainContent {
+        padding: 2.5rem 0;
+    }
+}
+
