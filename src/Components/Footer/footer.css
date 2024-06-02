@@ -1,0 +1,110 @@
+:root {
+    --primary-color: #3498db;  /* Blue */
+    --secondary-color: #2ecc71;  /* Green */
+    --accent-color: #e74c3c;  /* Red */
+    --background-color: #ecf0f1;  /* Light Grey */
+    --text-color: #2c3e50;  /* Dark Grey */
+}
+
+.Footer {
+    background: pink;
+    padding: 2rem 0;
+}
+
+.Footer .secContainer.container.grid {
+    gap: 1.5rem;
+    text-align: center;
+}
+
+.Footer .secContainer.container.grid .footerLogo {
+    padding-bottom: .5rem;
+}
+
+.Footer .secContainer.container.grid .footerLogo .logo {
+    color: var(--accent-color);
+    font-weight: 500;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.Footer .secContainer.container.grid .footerLogo .logo .icon {
+    font-size: 25px;
+    color: var(--primary-color);
+    margin-right: .5rem;
+}
+
+.Footer .secContainer.container.grid .socialsflex {
+    display: flex;
+    gap: .5rem;
+    margin: auto;
+    justify-content: center;
+}
+
+.Footer .secContainer.container.grid .socialsflex .icon {
+    font-size: 30px;
+    background: var(--accent-color);
+    border-radius: 50%;
+    padding: 8px;
+    color: var(--background-color);
+    transition: background-color 0.3s;
+}
+
+.Footer .secContainer.container.grid .socialsflex .icon:hover {
+    background-color: blanchedalmond;
+}
+
+.Footer .secContainer.container.grid .footerlinks {
+    display: grid;
+    row-gap: .2rem;
+}
+
+.Footer .secContainer.container.grid .footerlinks .linktitle {
+    padding-bottom: .5rem;
+    color: var(--text-color);
+    font-weight: 700;
+}
+
+.Footer .secContainer.container.grid .footerlinks li:hover {
+    transform: translateX(10px);
+}
+
+.Footer .secContainer.container.grid .footerlinks li:hover a {
+    color: var(--primary-color);
+}
+
+.Footer .secContainer.container.grid .footerlinks a,
+.Footer .secContainer.container.grid .footerlinks .phone,
+.Footer .secContainer.container.grid .footerlinks .email {
+    color: var(--text-color);
+    font-size: 13px;
+    font-weight: 500;
+}
+
+/*media
+*/
+
+@media screen and (min-width: 448px) {
+    .secContainer.container.grid {
+        grid-template-columns: repeat(2, 1fr);
+        text-align: start;
+        align-items: flex-start;
+    }
+
+    .secContainer.container.grid .footerlinks {
+        justify-content: center;
+    }
+}
+
+@media screen and (min-width: 640px) {
+    .secContainer.container.grid {
+        grid-template-columns: repeat(4, 1fr);
+    }
+}
+
+@media screen and (min-width: 900px) {
+    .secContainer.container.grid {
+        padding: 2rem;
+    }
+}
