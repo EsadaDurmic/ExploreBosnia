@@ -1,4 +1,4 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './popular.css'
 import { BsArrowLeft } from "react-icons/bs";
 import { BsArrowRight } from "react-icons/bs";
@@ -6,6 +6,10 @@ import { BsDot } from "react-icons/bs";
 
 import img from '../../assets/viber_image_2024-05-21_13-27-24-989.jpg';
 import img2 from '../../assets/viber_image_2024-05-21_13-27-14-795.jpg';
+
+import Aos from 'aos'
+import 'aos/dist/aos.css'
+
 const Data = [
 {
   id:1,
@@ -51,11 +55,16 @@ const Data = [
 },
 ]
 const Popular = () => {
+
+   useEffect(()=>{
+    Aos.init({duration:2000})
+  },[])
+  
   return (
     <section className='popular section container'>
 <div className="secContainer">
   <div className="secHeader flex">
-    <div className="textDiv">
+    <div data-aos ="fade-right " data-aos-duration ="2500 " className="textDiv">
       <h2 className="secTitle">
         Popular Destionation
       </h2>
@@ -63,7 +72,7 @@ const Popular = () => {
           From historical cities to natural spectaculars...
         </p>
     </div>
-    <div className="iconsDiv flex">
+    <div data-aos ="fade-left " data-aos-duration ="2500 " className="iconsDiv flex">
     <BsArrowLeft className='icon leftIcon' />
     <BsArrowRight className='icon rightIcon'/>
     </div>
@@ -73,7 +82,7 @@ const Popular = () => {
      {
       Data.map(({id, imgSrc, destTitle, location, grade})=>{
         return(
-          <div className="singleDestination">
+          <div  data-aos ="fade-up " className="singleDestination">
             <div className="destImage">
 
               <img src={imgSrc} alt="Image title" />
