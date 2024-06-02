@@ -2,6 +2,9 @@ import React, {UseEffect} from 'react'
 import './about.css'
 import Aos from 'aos'
 import 'aos/dist/aos.css'
+import img1 from '../../assets/viber_image_2024-05-21_13-27-24-989.jpg';
+import img2 from '../../assets/viber_image_2024-05-21_13-27-24-989.jpg';
+import img3 from '../../assets/viber_image_2024-05-21_13-27-24-989.jpg';
 
 const About = () => {
 
@@ -12,8 +15,43 @@ const About = () => {
 
   
   return (
-    <div>About</div>
-  )
+ <section className='sectionabout'>
+      <div className="secContainer">
+        <div className="title">
+          WHY HIKING?
+        </div>
+        <div className="mainContent container grid">
+          <div className="singleItem">
+            <img src={img1} alt="Image 1" />
+            <h3>50+ Mountains</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime voluptatibus 
+              laudantium error molestiae voluptate veritatis totam cupiditate aperiam fugiat!</p>
+          </div>
+          <div className="singleItem">
+            <img src={img2} alt="Image 2" />
+            <h3>100+ Hikings</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime voluptatibus 
+              laudantium error molestiae voluptate veritatis totam cupiditate aperiam fugiat!</p>
+          </div>
+          <div className="singleItem">
+            <img src={img3} alt="Image 3" />
+            <h3>200+ Customers</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus maxime voluptatibus 
+              laudantium error molestiae voluptate veritatis totam cupiditate aperiam fugiat!</p>
+          </div>
+        </div>
+        <div className="Videocard container">
+          <div className="cardcontent grid">
+            <div className="cardText">
+              <h2>Lorem, ipsum dolor sit amet consectetur adipisicing.</h2>
+              <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Placeat id veniam harum ipsa architecto, 
+                repellat repellendus perferendis minus expedita accusamus.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
 }
 
 export default About
