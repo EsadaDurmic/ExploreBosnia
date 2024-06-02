@@ -1,4 +1,4 @@
-.about .secContainer .title {
+.sectionabout .secContainer .title {
   color: black;
   line-height: 1.5rem;
   padding-bottom: 0.5rem;
@@ -6,46 +6,46 @@
   font-size: 1.5rem;
 }
 
-.about .secContainer .mainContent {
+.sectionabout .secContainer .mainContent {
   gap: 0.1rem;
 }
 
-.about .secContainer .mainContent .singleItem {
+.sectionabout .secContainer .mainContent .singleItem {
   text-align: center;
 }
 
-.about .secContainer .mainContent .singleItem img {
+.sectionabout .secContainer .mainContent .singleItem img {
   background: brown;
   width: 100px;
   border-radius: 50%;
   padding: 1rem;
 }
 
-.about .secContainer .mainContent .singleItem h3 {
+.sectionabout .secContainer .mainContent .singleItem h3 {
   font-weight: 700;
   color: black;
   padding: 0.5rem;
 }
 
-.about .secContainer .mainContent .singleItem p {
+.sectionabout .secContainer .mainContent .singleItem p {
   font-size: 13px;
   font-weight: 500;
   padding-bottom: 0.5rem;
   color: white;
 }
 
-.about .secContainer .mainContent .singleItem .cardContent {
+.sectionabout .secContainer .Videocard .cardcontent {
   gap: 2rem;
   padding: 1rem 2rem;
 }
 
-.about .secContainer .mainContent .singleItem .cardContent .cardText h2 {
+.sectionabout .secContainer .Videocard .cardcontent .cardText h2 {
   color: black;
   font-weight: 600;
   padding-bottom: 1rem;
 }
 
-.about .secContainer .mainContent .singleItem .cardContent .cardText p {
+.sectionabout .secContainer .Videocard .cardcontent .cardText p {
   color: black;
   opacity: 0.7;
   font-size: 12px;
@@ -53,30 +53,28 @@
   letter-spacing: 1px;
 }
 
-
 @media screen and (min-width: 884px) {
-    .about .SetContainer .videoCard .cardContent {
-        gap: 4rem;
-        padding: 4rem 3rem;
-    }
+  .sectionabout .secContainer .Videocard .cardcontent {
+    gap: 4rem;
+    padding: 4rem 3rem;
+  }
 
-    .about .SetContainer .videoCard .cardContent .cardText h2 {
-        font-size: 2rem;
-    }
+  .sectionabout .secContainer .Videocard .cardcontent .cardText h2 {
+    font-size: 2rem;
+  }
 
-    .about .SetContainer .videoCard .cardContent .cardText p {
-        opacity: 0.7;
-        font-size: 15px;
-    }
+  .sectionabout .secContainer .Videocard .cardcontent .cardText p {
+    opacity: 0.7;
+    font-size: 15px;
+  }
 
-    .about .SetContainer .videoCard .cardContent {
-        grid-template-columns: repeat(2, 1fr) !important;
-    }
+  .sectionabout .secContainer .Videocard .cardcontent {
+    grid-template-columns: repeat(2, 1fr) !important;
+  }
 }
 
 @media screen and (min-width: 1024px) {
-    .about .SetContainer .mainContent {
-        padding: 2.5rem 0;
-    }
+  .sectionabout .secContainer .mainContent {
+    padding: 2.5rem 0;
+  }
 }
-

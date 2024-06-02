@@ -1,91 +1,112 @@
-.Offer .secContainer .mainContent {
+.offer .secContainer .mainContent {
     gap: 1rem;
-}
-
-.Offer .secContainer .mainContent .singleOffer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+  
+  .offer .secContainer .mainContent .singleOffer {
     border-radius: 1rem;
     overflow: hidden;
     padding: 0.5rem;
-    box-shadow: 0 2px 8px 2px grey;
-}
-
-.Offer .secContainer .mainContent .singleOffer .icon {
+    box-shadow: 0 2px 8px 2px rgb(211, 210, 210);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 300px; /* Set a fixed width for the cards */
+  }
+  
+  .offer .secContainer .mainContent .singleOffer .icon {
     font-size: 20px;
-    color: orange;
-}
-
-.Offer .secContainer .mainContent .singleOffer small {
+    color:#0a2463;
+  }
+  
+  .offer .secContainer .mainContent .singleOffer small {
     font-weight: 500;
-    color: black;
-}
-
-.Offer .secContainer .mainContent .singleOffer .destImage {
+    color: #0a2463;
+  }
+  
+  .offer .secContainer .mainContent .singleOffer .destImage {
     position: relative;
-    height: 200px;
+    height: 150px; /* Set a fixed height for the images */
     width: 100%;
     border-radius: 1rem;
     overflow: hidden;
-}
-
-.Offer .secContainer .mainContent .singleOffer .destImage img {
+  }
+  
+  .offer .secContainer .mainContent .singleOffer .destImage img {
     height: 100%;
-}
-
-.Offer .secContainer .mainContent .singleOffer .destImage .discount {
+    width: 100%;
+    object-fit: cover;
+  }
+  
+  .offer .secContainer .mainContent .singleOffer .destImage .discount {
     position: absolute;
     top: 10px;
     right: 10px;
     padding: 5px 10px;
-    background: #3b3b3b;
-    color: white;
+    background: pink;
+    color: #0a2463;
     border-radius: 3rem;
     font-size: 10px;
     font-weight: 500;
-}
-
-.Offer .secContainer .mainContent .singleOffer .offerBody {
+  }
+  
+  .offer .secContainer .mainContent .singleOffer .offerBody {
     padding: 1rem;
-}
-
-.Offer .secContainer .mainContent .singleOffer .offerBody .price {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .offer .secContainer .mainContent .singleOffer .offerBody .price {
     justify-content: space-between;
-    display: flex; /* This is added to ensure that justify-content works */
-}
-
-.Offer .secContainer .mainContent .singleOffer .offerBody .price h4 {
-    color: black;
-    font-weight: 700;
+    display: flex;
+    width: 100%;
+  }
+  
+  .offer .secContainer .mainContent .singleOffer .offerBody .price h4 {
+    color: #0a2463;
+    font-weight: bolder;
     font-size: 1.1rem;
-}
-
-.Offer .secContainer .mainContent .singleOffer .offerBody .price .status {
+  }
+  
+  .offer .secContainer .mainContent .singleOffer .offerBody .price .status {
     padding: 5px 10px;
     color: rgb(250, 250, 250);
-    background: #3b3b3b;
+    background: #E8C547;
     font-size: 10px;
     font-weight: 600;
     border-radius: 3rem;
-}
-
-.Offer .secContainer .mainContent .singleOffer .offerBody .amenities {
+  }
+  
+  .offer .secContainer .mainContent .singleOffer .offerBody .amenities {
     width: 100%;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     padding: 1rem 0;
     gap: 0.5rem;
-    display: flex; /* This is added to ensure that flex-wrap works */
-}
-
-.Offer .secContainer .mainContent .singleOffer .offerBody .amenities .singleAmneity {
+    display: flex;
+  }
+  
+  .offer .secContainer .mainContent .singleOffer .offerBody .amenities .singleAmenity {
     padding: 5px 10px;
     border-radius: 5px;
-    background: #434242;
+    background: pink;
     gap: 0.5rem;
-    display: flex; /* This is added to ensure that gap works */
-    align-items: center; /* This is added to ensure items are centered */
-}
-
-.Offer .secContainer .mainContent .singleOffer .offerBody .btn {
+    display: flex;
+    align-items: center;
+  }
+  
+  .offer .secContainer .mainContent .singleOffer .offerBody .location {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+  }
+  
+  .offer .secContainer .mainContent .singleOffer .offerBody .btn {
     margin-top: 1rem;
     width: 100%;
     text-align: center;
@@ -94,14 +115,15 @@
     color: white;
     font-weight: 600;
     gap: 0.5rem;
-    display: flex; /* This is added to ensure that justify-content and gap work */
-    align-items: center; /* This is added to ensure items are centered */
-}
-
-.Offer .secContainer .mainContent .singleOffer .offerBody .btn .icon {
+    display: flex;
+    align-items: center;
+  }
+  
+  .offer .secContainer .mainContent .singleOffer .offerBody .btn .icon {
     color: white;
-}
-
-.Offer .secContainer .mainContent .singleOffer:hover {
-    transform: translateY(-7px); 
-}
+  }
+  
+  .offer .secContainer .mainContent .singleOffer:hover {
+    transform: translateY(-7px);
+  }
+  

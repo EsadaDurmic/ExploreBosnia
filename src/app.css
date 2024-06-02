@@ -6,13 +6,6 @@
     font-family: "Nanum Gothic", sans-serif;
     transition: .3s ease;
 }
-:root{
-    --primary-color: #3498db;  /* Blue */
-  --secondary-color: #2ecc71;  /* Green */
-  --accent-color: #e74c3c;  /* Red */
-  --background-color: #ecf0f1;  /* Light Grey */
-  --text-color: #2c3e50;  /* Dark Grey */
-}
 a{
     text-decoration: none;
 }
@@ -32,7 +25,7 @@ li{
 .icon{
     font-size:2rem;
     cursor:pointer;
-    color: green;
+    color: #0A2463;
 
 }
 .grid {
@@ -41,22 +34,18 @@ li{
 }
 .btn{
     padding:.4rem 1.5rem;
-    background-color: var(--primary-color);
+    background-color: #0A2463;
     border:none;
     outline:none;
     border-radius: 3rem;
     cursor:pointer;
 }
 .btn a {
-    color:var(--secondary-color);
+    color:white;
     font-weight:500;
 }
-.btn:hover{
-     background: var(pink);
-}
-
 .btn:hover a{
-    color:var(--secondary-color);
+    color:pink;
 }
 .secIntro{
     max-width: 70%;
@@ -64,13 +53,13 @@ li{
     margin: 0 auto 2rem;
 }
 .secIntro .secTitle {
-    color:var(--accent-color);
+    color:azure;
     line-height: 1.5rem;
     padding-bottom: .5rem;
 }
 .secIntro p{
     font-size: 13px;
-    color:var(--primary-color);
+    color:pink;
     font-weight:500;
 }
 img, video {

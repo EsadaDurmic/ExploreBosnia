@@ -4,6 +4,7 @@ import Aos from 'aos'
 import 'aos/dist/aos.css'
 
 const Home = () => {
+  
 useEffect(()=>{
   Aos.init({duration:2000})
 },[])
@@ -43,7 +44,7 @@ useEffect(()=>{
       <input type="text" placeholder='100$' />
     </div>
 
-  <button data-aos ="fade-left" data-aos-duration ="2000 " className='btn'>Search</button>
+  <button data-aos ="fade-left" data-aos-duration ="2000 " className='btn search'>Search</button>
   </div>
 </div>
 </section>

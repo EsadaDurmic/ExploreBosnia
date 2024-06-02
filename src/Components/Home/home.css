@@ -16,14 +16,15 @@
 }
 
 .home .secContainer .homeText .title {
-    color: aliceblue;
+    color: white;
     font-size: 2rem;
     font-weight: 700;
     line-height: 2.5rem;
 }
 
 .home .secContainer .homeText .subTitle {
-    color: aquamarine;
+    color:white;
+    font-weight: bold;
     opacity: .9;
     font-size: 13px;
     padding: 1rem 0;
@@ -40,7 +41,7 @@
     width: 80%;
     border-radius: 1rem;
     padding: 2rem;
-    background-color: azure;
+    background-color: pink;
     position: absolute;
     gap: 1rem;
     justify-content: center;
@@ -60,7 +61,7 @@
 .home .secContainer .homeCard .distDiv label,
 .home .secContainer .homeCard .priceDiv label {
     display: block;
-    color: blanchedalmond;
+    color: #0A2463;
     font-weight: 500;
     font-size: 13px;
     padding-bottom: .4rem;
@@ -70,7 +71,7 @@
 .home .secContainer .homeCard .distDiv input,
 .home .secContainer .homeCard .priceDiv input {
     width: 100%;
-    background-color: rgb(255, 255, 255);
+    background-color: white;
     border-radius: 10px;
     border: none;
     padding: 10px;

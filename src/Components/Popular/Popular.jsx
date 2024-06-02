@@ -105,12 +105,6 @@ const Popular = () => {
                 <h6>
                   London
                 </h6>
-                <span className='flex'>
-                  <span className='dot'>
-                    <BsDot className='icon'/>
-                  </span>
-                  Dot
-                </span>
               </div>
             </div>
           </div>

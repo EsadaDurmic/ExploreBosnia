@@ -1,15 +1,16 @@
+
 .header {
     position: relative;
     display: flex;
     align-items: center;
     justify-content: space-between;
-    background: transparent;
+    background: pink;
     width: 100%;
     padding: 1rem;
   }
   
   .header .logoDiv .logo {
-    color: #02121c;
+    color: #0A2463;
     cursor: pointer;
     display: flex;
     align-items: center;
@@ -38,9 +39,8 @@
   
   .navLink {
     text-decoration: none;
-    color: inherit;
   }
-  
+ 
   .headerBtns {
     display: flex;
   }
@@ -49,14 +49,18 @@
     margin-left: 1rem;
     padding: 0.5rem 1rem;
     border: none;
-    background-color: #02121c;
+    background-color: #0A2463;
     color: white;
     cursor: pointer;
   }
-  
-  .btn.loginBtn {
+
+  .loginBtn {
     background-color: transparent;
-    color: #02121c;
+    border:0.1rem solid #0A2463;
+    color: white;
+  }
+  .loginBtn a:hover {
+ color:#0A2463;
   }
   
   .closeNavbar {
@@ -74,7 +78,7 @@
   @media screen and (max-width: 768px) {
     .navBar {
       flex-direction: column;
-      background: grey;
+      background: #e8c547;
       position: absolute;
       height: max-content;
       padding: 1rem;
@@ -102,13 +106,13 @@
     }
   
     .navLink {
-      color: black;
+      color:white;
       font-size: 1rem;
       font-weight: 600;
     }
   
     .navLink:hover {
-      color: orange;
+      color: #0A2463;
     }
   
     .headerBtns {
@@ -121,37 +125,35 @@
   
     .btn a {
       font-weight: 600;
+      color:white;
     }
   
     .btn a:hover {
-      color: orange;
+      color: #e8c547;
     }
   
     .loginBtn {
       background: none;
       border: 1px solid;
-      color: green;
+      color: #0A2463;
     }
   
     .loginBtn a {
-      color: black;
-    }
-  
-    .loginBtn a:hover {
-      background: grey;
       color: white;
     }
   
+    .loginBtn a:hover {
+      color:#0A2463
+    }
     .closeNavbar {
       display: block;
       position: absolute;
       top: 1rem;
       right: 1rem;
-      color: white;
     }
   
     .closeNavbar:hover .icon {
-      color: black;
+      color: pink;
     }
 
   
@@ -199,14 +201,10 @@
   }
 
   .navBarSection .header .navBar .navlists .navItem .navLink {
-      color: var(--secondary-color);
+      color: #0A2463;
       padding: 0 0.45rem;
       font-size: 0.9rem;
       font-weight: 400;
-  }
-
-  .navBarSection .header .navBar .navlists .navItem .navLink:hover {
-      color: var(--secondary-color);
   }
 
   .navBarSection .header .navlists .btn {
@@ -214,21 +212,24 @@
   }
 
   .navBarSection .header .navlists .btn a {
-      color: var(--secondary-color);
+      color:white;
       font-weight: 500;
   }
 
   .navBarSection .header .navlists .loginBtn {
       background: none;
-      border: 1px solid var(--secondary-color);
+      border: 1px solid white;
   }
 
   .navBarSection .header .navlists .loginBtn:hover {
-      background: var(--secondary-color);
+      background: white;
   }
 
   .navBarSection .header .navlists .loginBtn:hover a {
-      color: var(--background-color);
+      color: #0A2463;
+  }
+  .navLink:hover{
+    color:white;
   }
 }
 
