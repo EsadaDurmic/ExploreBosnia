@@ -15,7 +15,7 @@ const About = () => {
     <section className='sectionabout'>
       <div className="secContainer">
         <div className="title" data-aos="fade-up" data-aos-duration="2000">
-          WHY HIKING?
+          LOREM IPSUM
         </div>
         <div className="mainContent container grid">
           <div className="singleItem" data-aos="fade-up" data-aos-duration="2000">

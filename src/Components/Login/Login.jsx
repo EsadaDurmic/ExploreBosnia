@@ -2,16 +2,16 @@ import React, { useState } from 'react';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faUser, faLock } from '@fortawesome/free-solid-svg-icons';
 import { MdModeOfTravel } from 'react-icons/md';
-import { useNavigate } from 'react-router-dom'; // Importujemo useNavigate
-import './login.css'; // Ensure the CSS path is correct
-
+import { useNavigate } from 'react-router-dom'; 
+import './login.css'; 
+import { db } from '../../firebaseConfig';
 const Login = ({ onLogin }) => {
   const [username, setUsername] = useState('');
   const [password, setPassword] = useState('');
-  const [error, setError] = useState(''); // State za čuvanje poruke o grešci
+  const [error, setError] = useState(''); 
   const navigate = useNavigate();
 
-  const correctUsername = 'user';
+  const correctUsername = 'user'; //podaci za login jer povlacenje iz baze ne funkcionise
   const correctPassword = 'password';
 
   const handleFocus = (e) => {
@@ -29,10 +29,10 @@ const Login = ({ onLogin }) => {
   const handleSubmit = (e) => {
     e.preventDefault();
     if (username === correctUsername && password === correctPassword) {
-      navigate('/home'); // Uspješan login
-      onLogin(); // Poziv funkcije za prijavu
+      navigate('/home'); // uspjesan login
+      onLogin(); 
     } else {
-      setError('Incorrect username or password!'); // Postavljanje poruke o grešci
+      setError('Incorrect username or password!'); 
     }
   };
 
@@ -60,7 +60,7 @@ const Login = ({ onLogin }) => {
               <input type="password" className="input" value={password} onChange={(e) => setPassword(e.target.value)} onFocus={handleFocus} onBlur={handleBlur} />
             </div>
           </div>
-          {error && <p className="error-message">{error}</p>} {/* Prikazivanje poruke o grešci */}
+          {error && <p className="error-message">{error}</p>} 
           <a href="#" class="forgotPass">Forgot Password?</a>
           <input type="submit" className="btn" value="Login" />
         </form>

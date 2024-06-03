@@ -1,0 +1,35 @@
+.container-contact {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: white; 
+}
+
+.contact-content {
+  background-color: pink; 
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); 
+  padding: 40px;
+}
+
+.contact-content form {
+  display: flex;
+  flex-direction: column;
+}
+
+.contact-content h2 {
+  margin: 15px 0;
+  color: #0a2463;
+  font-size: 1.5rem;
+}
+
+.contact-content .input-div {
+  position: relative;
+  display:block;
+  grid-template-columns: 7% 93%;
+  margin: 25px 0;
+  padding: 5px 0;
+  border-bottom: 2px solid #e8c547;
+}
+

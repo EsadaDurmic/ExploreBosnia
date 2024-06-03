@@ -8,16 +8,16 @@ const Navbar = () => {
   const [active, setActive] = useState(false);
 
   const showNav = () => {
-    console.log('showNav called'); // Logs when showNav is called
+    console.log('showNav called'); 
     setActive(true);
   };
 
   const removeNav = () => {
-    console.log('removeNav called'); // Logs when removeNav is called
+    console.log('removeNav called'); 
     setActive(false);
   };
 
-  console.log('Navbar rendered with active state:', active); // Logs when Navbar renders and shows current state
+  console.log('Navbar rendered with active state:', active); 
 
   return (
     <section className="navBarSection">
