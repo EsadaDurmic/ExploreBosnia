@@ -1,5 +1,5 @@
-.popular {
-    padding-top: 15rem;
+.popular  {
+    margin-top: 5rem;
   }
   
   .popular .secContainer .secHeader {
@@ -13,7 +13,6 @@
     line-height: 1.5rem;
     padding-bottom: .5rem;
   }
-  
   .popular .secContainer .secHeader .textDiv p {
     font-size: 13px;
     color: #0a2463;

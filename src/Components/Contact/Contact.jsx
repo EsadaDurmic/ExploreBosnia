@@ -1,7 +1,12 @@
-import React, { useState } from 'react';
+import React, {useEffect, useState} from 'react';
 import './contact.css'; 
+import Aos from 'aos';
+import 'aos/dist/aos.css';
 
 const Contact = () => {
+  useEffect(()=>{
+    Aos.init({duration:2000})
+  },[])  
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
@@ -12,7 +17,7 @@ const Contact = () => {
   };
 
   return (
-    <div className="container-contact">
+    <div data-aos ="fade-up-right" data-aos-duration ="3000 " className="container-contact">
       <div className="contact-content">
         <form onSubmit={handleSubmit}>
           <h2>Contact Us</h2>

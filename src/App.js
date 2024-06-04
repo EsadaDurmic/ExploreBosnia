@@ -34,9 +34,9 @@ const App = () => {
               <Home />
               <Popular />
               <Offers />
+              <About />
               <Contact />
-             {/* <About />
-              <Blog /> nebitno */}
+              {/*<Blog /> nebitno */}
               <Footer />
             </>
           ) : (
